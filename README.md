@@ -48,6 +48,9 @@ exports.neteaseCloudMusic = {
 ```js
 // {app_root}/config/config.default.js
 exports.neteaseCloudMusic = {
+  serverIP: '', // server ip
+  serverPort: '', // server port
+  serverDomain: '' // server domain, config this without config ip and port 
 };
 ```
 
