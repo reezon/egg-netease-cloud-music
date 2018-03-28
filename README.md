@@ -23,9 +23,12 @@
 <!--
 Description here.
 -->
+egg for [neteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)
 
 ## Install
+1. build a server with [neteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)
 
+2. install this plugin
 ```bash
 $ npm i egg-netease-cloud-music --save
 ```
@@ -52,7 +55,16 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
 
-<!-- example here -->
+```js
+// search music by keyword
+const musicList = await this.app.neteaseCloudMusic.searchMusic('天使的翅膀')
+
+// get music url by netease id
+const musicUrl = await this.app.neteaseCloudMusic.getMusicUrl(27747330)
+
+// download music to local location
+const musicDownload = await this.app.neteaseCloudMusic.downloadMusic(27747330, '/test.mp3')
+```
 
 ## Questions & Suggestions
 
